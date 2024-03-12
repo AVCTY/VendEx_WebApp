@@ -1,0 +1,231 @@
+    /*Start of mobile css styling by Arthur Vicent Chin*/
+    
+    @media screen and (max-width: 600px) {
+        .container-responsive {
+            width: 100%;
+        }
+        .product-page-title {
+            font-size: 16px;
+            width: 100%;
+        }
+        .breadcrumbs a {
+            font-size: 12px;
+        }
+        .breadcrumbs a:hover {
+            font-size: 13px;
+        }
+        .showcase-vending-left p {
+            font-size: 20px;
+        }
+        .showcase-vending-left {
+            display: block;
+        }
+        .home-aside h2 {
+            font-size: 16px
+        }
+        .home-aside p {
+            font-size: 13px
+        }
+        .aside-call-back a {
+            font-size: 13px
+        }
+        .section-links {
+            width: 300px;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .home-aside h2 {
+            font-size: 20px
+        }
+        .home-aside p {
+            font-size: 16px
+        }
+        .aside-call-back a {
+            font-size: 16px;
+        }
+        .showcase-vending-left p {
+            font-size: 20px;
+        }
+        .showcase-vending-left {
+            display: block;
+        }
+        .container-responsive {
+            width: 49.99%;
+            margin: 6px 0;
+        }
+        .product-page-title {
+            font-size: 20px;
+            margin: 30px 0;
+        }
+        .sec-description ul li {
+            font-size: 16px;
+        }
+        .sec-description h2 {
+            font-size: 20px;
+        }
+        #productImg-row {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 50%;
+        }
+        #section1 h1 {
+            font-size: 30px;
+        }
+        #section1 p {
+            font-size: 16px;
+        }
+        #productImg-row figure figcaption {
+            font-size: 1em;
+        }
+        #productImg-row img {
+            width: 70%;
+        }
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+            display: block;
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .footer-distributed .footer-center i {
+            margin-left: 0;
+        }
+        .footer-left img {
+            margin-top: 40px;
+        }
+        footer {
+            position: static;
+        }
+        header {
+            padding-top: 40px;
+        }
+        .hero-text h1 {
+            font-size: 35px;
+        }
+        .prev,
+        .next,
+        .text {
+            font-size: 14px
+        }
+    }
+    /*End of mobile css styling by Arthur Chin*/
+    /* Style for mobile screen written by Clement Goh */
+    
+    @media screen and (max-width: 1100px) {
+        article {
+            margin: 2%;
+        }
+        /* Style for mobile nav bar */
+        nav {
+            position: relative;
+        }
+        nav a:not(:first-child),
+        .dropdown {
+            display: none;
+        }
+        nav a.icon {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            display: block;
+            font-size: 30px;
+        }
+        #logo img {
+            float: none;
+            text-align: center;
+            display: block;
+            margin: 1em auto;
+        }
+        /* Add "responsive" class using JS when user click on icon.*/
+        nav.responsive {
+            position: relative;
+        }
+        nav.responsive .links a:not(.icon) {
+            float: none;
+            display: block;
+            text-align: center;
+            margin: 1.5em 0 0 0;
+        }
+        nav.responsive .dropdown {
+            float: none;
+            display: block;
+        }
+        nav.responsive .dropdown-content {
+            position: relative;
+            box-shadow: none;
+            margin-top: 0;
+        }
+        nav.responsive .droplink {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        /* Style for form in mobile version */
+        /* Allow the two columns of form to stack on each other when screen is less than 1000px */
+        .col30,
+        .col70,
+        input[type=submit],
+        input[type=reset] {
+            width: 100%;
+            margin-top: 10px;
+        }
+        /* Style for timeline in mobile version */
+        /* Place the timelime to the left */
+        .about-article .timeline::after {
+            left: 47px;
+            height: 100%;
+        }
+        /* Full-width containers */
+        .about-article .timeline-container {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+        /* Make sure that all arrows are pointing leftwards */
+        .about-article .timeline-container::before {
+            left: 61px;
+            border: medium solid white;
+            border-width: 10px 10px 10px 0;
+            border-color: transparent white transparent transparent;
+        }
+        /* Make sure all circles are at the same spot */
+        .about-article .left::after,
+        .about-article .right::after {
+            left: 15px;
+        }
+        /* Make all right containers behave like the left ones */
+        .about-article .right {
+            left: 0%;
+        }
+        /* Resize hero text */
+        .herotext {
+            max-width: 80%;
+        }
+        .herotext h1 {
+            font-size: 36px;
+        }
+        .herotext p {
+            font-size: 20px;
+        }
+        /* Style for about us page */
+        .google-map {
+            width: 100%;
+            text-align: center;
+        }
+        #location {
+            width: 100%;
+        }
+        /* Stlye for about me 1 page */
+        .aboutme-article .background-info {
+            float: none;
+            margin: 10px auto;
+        }
+        .aboutme-article figure img {
+            display: block;
+            margin: 0 auto;
+            float: none;
+        }
+    }
+    /*End of mobile styling css by Clement Goh*/
