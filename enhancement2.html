@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Clement Goh" />
+    <meta name="description" content="Enhancement used on VendEx" />
+    <meta name="keywords" content="Vending, Machine, Enhancement, VendEx" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobile-style.css" />
+    <link rel="icon" href="images/logo.svg" />
+    <script src="script/enhancements.js"></script>
+    <script src="script/script.js"></script>
+    <title>VendEx | Enhancement 2</title>
+</head>
+
+<body>
+    <!-- Start of nav bar -->
+    <nav id="Nav" class="mobilenav">
+        <div class="logo">
+            <a href="index.html" id="logo">
+                <img src="images/logo.svg" alt="Logo" />
+            </a>
+        </div>
+        <div class="links">
+            <div class="dropdown">
+                <a class="droplink">Vending Machines  <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="cold.html">Cold Drinks Machines</a>
+                    <a href="hot.html">Hot Drinks Machines</a>
+                    <a href="snacks.html">Snacks Machines</a>
+                </div>
+            </div>
+            <a href="enquiry.html">Rental Enquiry</a>
+            <a href="about.html">About Us</a>
+            <div class="dropdown">
+                <a class="droplink">Others  <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="enhancement.html">Enhancement</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">&#9776;</a>
+        </div>
+    </nav>
+    <!-- End of nav bar -->
+
+    <!-- Start of hero image header -->
+
+    <header class="enhancement-heroimg heroimg">
+        <div class="herotext">
+            <h1><span class="bold">Enhancement</span></h1>
+            <p>Some features we offered in this website to give you an extraordinary experience</p>
+        </div>
+    </header>
+    <!-- End of hero image header -->
+
+    <!-- Start of breadcrumb-->
+
+    <div class="breadcrumb">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Enhancement 2</li>
+        </ul>
+    </div>
+    <!-- End of breadcrumb-->
+
+    <!-- Start of article-->
+
+    <article>
+        <div>
+            <!-- Enhancement 1 -->
+            <div class="enhancement-container">
+                <h2 class="enhancement-header">Image <span class="bold">Slideshow</span></h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li>
+                        <a href="about.html#google-map"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Enhancement 2 -->
+            <!-- This enhancement is inspired from COS10011 Lab 6 - Document Object Model -->
+            <div class="enhancement-container">
+                <h2 class="enhancement-header">Form <span class="bold">preview page</span> before submission</h2>
+                <ul>
+                    <li>This allows the user to <span class="bold">check the input</span> of their form before submitting.</li>
+                    <li>The input values are <span class="bold">stored into session storage</span> and display out in another HTML file called confirm.html.</li>
+                    <li>This can be seen when submitting the <a href="enquiry.html">enquiry form</a>, a preview page will appear to confirm the enquiry.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Enhancement 3 -->
+            <div class="enhancement-container">
+                <h2 class="enhancement-header"><span class="bold">Back to top</span> button</h2>
+                <ul>
+                    <li>A button will appear when the user <span class="bold">scroll the webpage until a certain point</span>.</li>
+                    <li>This button will function to help the user to <span class="bold">scroll back to the top</span> of the webpage.</li>
+                    <li>This section of enhancement can be seen after scrolling a <a href="#">webpage</a>.</li>
+                </ul>
+            </div>
+
+            <!-- Enhancement 4 -->
+            <!-- This enhancement is inspired from https://www.youtube.com/watch?v=fsmFBwlk7wo&t=533s -->
+            <div class="enhancement-container">
+                <h2 class="enhancement-header"><span class="bold">Loading animation</span></h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li>
+                        <a href="about.html#google-map"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Enhancement 5 -->
+            <!-- This enhancement is inspired from https://www.w3schools.com/howto/howto_js_responsive_navbar_dropdown.asp -->
+
+            <div class="enhancement-container">
+                <h2 class="enhancement-header"><span class="bold">Mobile menu </span>expand button</h2>
+                <ul>
+                    <li>This feature is to allow the user to <span class="bold">expand the navigation menu</span> in smaller screen size.</li>
+                    <li>The user can <span class="bold">press on the menu icon</span> to expand the navigation menu.</li>
+                    <li>A class is written inside the mobile CSS and by using Javascript to replace the class of the navigation menu.</li>
+                    <li>This can be seen by decrease the <a href="#">browser size</a>.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="next-prev-button">
+            <a href="enhancement.html" class="previous">Previous</a>
+        </div>
+    </article>
+    <!-- End of article -->
+
+    <!--Start of back to top button (Using javascript)-->
+    <button onclick="backtoTop()" id="topBtn" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+    <script>
+        backtoTop();
+    </script>
+    <!--End of back to top button (Using javascript)-->
+
+
+    <!--Footer content-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Vending Machines</h3>
+
+            <div class="footer-menu-links">
+                <a href="cold.html" target="new_window">> Cold Drinks Vending Machines</a><br/>
+                <a href="hot.html" target="new_window">> Hot Drinks Vending Machines</a><br/>
+                <a href="snacks.html" target="new_window">> Snacks Vending Machines</a>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <h3>Explore</h3>
+
+            <div class="footer-menu-links">
+                <a href="enquiry.html" target="new_window">> Rental Enquiry</a><br/>
+                <a href="about.html" target="new_window">> About Us</a><br/>
+                <a href="about.html#team" target="new_window">> Meet The Team</a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <h3>Others</h3>
+
+            <div class="footer-menu-links">
+                <a href="#" target="new_window">> Enhancement</a><br/>
+                <a href="feedback.html" target="new_window">> Feedback</a><br/>
+                <a href="disclaimer.html" target="new_window">> Disclaimer</a>
+            </div>
+        </div>
+        <div class="prox">
+            <br/>
+            <hr/>
+            <br/>
+        </div>
+
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="VendEx Logo" />
+            </a>
+
+            <p class="footer-links">
+                Solving all your vending <br/> needs, one machine at a time.
+            </p>
+
+            <p class="footer-company-name">&copy; 2019 VendEx Sdn. Bhd.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>330, 801-2B Jalan Tun Jugah, Tun Jugah, </span> 93350 Kuching, Sarawak</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+60 11-26286813</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:vendex@gmail.com">vendex@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> We offer training and for our vending machines which are a suitable choice for large offices, public areas and call centers.</p><br/>
+
+            <h4 class="footer-social-media">Social Medias</h4>
+
+            <div class="footer-icons">
+                <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

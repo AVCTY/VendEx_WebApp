@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Brandon Tan" />
+    <meta name="description" content="Product Page" />
+    <meta name="keywords" content="Vending, Machine, Rental" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/mobile-style.css" />
+    <link rel="shortcut icon" href="images/logo.svg">
+    <script src="script/script.js"></script>
+    <script src="script/enhancements.js"></script>
+    <title>Vendex | Feedback</title>
+</head>
+
+<body>
+    <!-- Start of nav bar -->
+    <nav id="Nav" class="mobilenav">
+        <div class="logo">
+            <a href="index.html" id="logo">
+                <img src="images/logo.svg" alt="Logo" />
+            </a>
+        </div>
+        <div class="links">
+            <div class="dropdown">
+                <a class="droplink">Vending Machines  <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="cold.html">Cold Drinks Machines</a>
+                    <a href="hot.html">Hot Drinks Machines</a>
+                    <a href="snacks.html">Snacks Machines</a>
+                </div>
+            </div>
+            <a href="enquiry.html">Rental Enquiry</a>
+            <a href="about.html">About Us</a>
+            <div class="dropdown">
+                <a class="droplink">Others  <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="enhancement.html">Enhancement</a>
+                    <a href="#">Feedback</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">&#9776;</a>
+        </div>
+    </nav>
+    <!-- End of nav bar -->
+
+    <!-- Start of hero image header -->
+    <header class="feedback-heroimg heroimg">
+        <div class="herotext">
+            <h1>Have <span class="bold">Something</span> To Tell Us?</h1>
+            <p>Give us your opinion below!</p>
+        </div>
+    </header>
+    <!-- End of hero image header -->
+
+    <!-- Start of breadcrumb-->
+
+    <div class="breadcrumb">
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Feedback</li>
+        </ul>
+    </div>
+    <!-- End of breadcrumb-->
+
+    <article>
+        <div id="feedback">
+            <h1>Feedback</h1>
+            <div class="feedbackForm">
+                <form>
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstname" placeholder="Your name">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastname" placeholder="Your last name">
+                    <label for="feedbackComment">Feedback</label>
+                    <textarea id="feedbackComment" name="feedbackComment" placeholder="Report any issue with any of our webpages" rows="10"></textarea>
+                    <input class="feedbackButton" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <!--Start of aside content-->
+    <aside class="home-aside">
+        <h2>Interested in our products?</h2>
+        <p>
+            Our vending machines are convenient and will satisfy all your vending needs. Suitable for large offices, schools, hospitals, public places and call centers. <br/> Request a call back or call us now at: <a href="tel:+082456789" class="aside-phone-num">+082 456 789</a>
+        </p><br/>
+        <div class="aside-call-back"><a href="enquiry.html">Request A Call Back</a></div>
+    </aside>
+    <!--End of aside content-->
+
+    <!--Start of back to top button (Using javascript)-->
+    <button onclick="backtoTop()" id="topBtn" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+    <script>
+        backtoTop();
+    </script>
+    <!--End of back to top button (Using javascript)-->
+
+
+    <!--Footer content-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Vending Machines</h3>
+
+            <div class="footer-menu-links">
+                <a href="cold.html" target="new_window">> Cold Drinks Vending Machines</a><br/>
+                <a href="hot.html" target="new_window">> Hot Drinks Vending Machines</a><br/>
+                <a href="snacks.html" target="new_window">> Snacks Vending Machines</a>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <h3>Explore</h3>
+
+            <div class="footer-menu-links">
+                <a href="enquiry.html" target="new_window">> Rental Enquiry</a><br/>
+                <a href="about.html" target="new_window">> About Us</a><br/>
+                <a href="about.html#team" target="new_window">> Meet The Team</a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <h3>Others</h3>
+
+            <div class="footer-menu-links">
+                <a href="enhancement.html" target="new_window">> Enhancement</a><br/>
+                <a href="#" target="new_window">> Feedback</a><br/>
+                <a href="disclaimer.html" target="new_window">> Disclaimer</a>
+            </div>
+        </div>
+        <div class="prox">
+            <br/>
+            <hr/>
+            <br/>
+        </div>
+
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="VendEx Logo" />
+            </a>
+
+            <p class="footer-links">
+                Solving all your vending <br/> needs, one machine at a time.
+            </p>
+
+            <p class="footer-company-name">&copy; 2019 VendEx Sdn. Bhd.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>330, 801-2B Jalan Tun Jugah, Tun Jugah, </span> 93350 Kuching, Sarawak</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+60 11-26286813</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:vendex@gmail.com">vendex@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> We offer training and for our vending machines which are a suitable choice for large offices, public areas and call centers.</p><br/>
+
+            <h4 class="footer-social-media">Social Medias</h4>
+
+            <div class="footer-icons">
+                <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

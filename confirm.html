@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="Clement Goh" />
+    <meta name="description" content="Confirm Enquiry for VendEx's product" />
+    <meta name="keywords" content="Vending, Machine, Confirm Enquiry, VendEx" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="images/logo.svg" />
+    <link rel="stylesheet" href="styles/mobile-style.css" />
+    <script src="script/enhancements.js"></script>
+    <script src="script/script.js"></script>
+    <title>VendEx | Confirm Enquiry</title>
+</head>
+
+<body>
+    <!-- Start of nav bar -->
+    <nav id="Nav" class="mobilenav">
+        <div class="logo">
+            <a href="index.html" id="logo">
+                <img src="images/logo.svg" alt="Logo" />
+            </a>
+        </div>
+        <div class="links">
+            <div class="dropdown">
+                <a class="droplink">Vending Machines  <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="cold.html">Cold Drinks Machines</a>
+                    <a href="hot.html">Hot Drinks Machines</a>
+                    <a href="snacks.html">Snacks Machines</a>
+                </div>
+            </div>
+            <a href="enquiry.html">Rental Enquiry</a>
+            <a href="about.html">About Us</a>
+            <div class="dropdown">
+                <a class="droplink">Others  <i class="fa fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="enhancement.html">Enhancement</a>
+                    <a href="feedback.html">Feedback</a>
+                    <a href="disclaimer.html">Disclaimer</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="mobileMenu()">&#9776;</a>
+        </div>
+    </nav>
+    <!-- End of nav bar -->
+
+    <!-- Start of hero image header -->
+
+    <header class="confirm-heroimg heroimg">
+        <div class="herotext">
+            <h1><span class="bold">Confirm</span> your submission</h1>
+            <p>Remember to double check the information that you filled before you submit the form.</p>
+        </div>
+    </header>
+
+    <!-- End of hero image header -->
+
+    <!-- Start of summary -->
+    <article class="confirm-article">
+
+        <div class="container">
+            <form action="mailto:vendex@gmail.com" method="POST" enctype="text/plain" id="enqForm" onsubmit="validate()">
+                <fieldset>
+                    <legend>Your Details:</legend>
+                    <div class="row">
+                        <div class="col30">
+                            <p>First Name</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_fname" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>Last Name</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_lname" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>Email</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_email" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>Contact Number</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_tel" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>Street Address</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_street" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>City/Town</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_city" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>State</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_state" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>Postcode</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_postcode" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>Product</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_product" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>Rental Duration</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_duration" class="confirm"></span></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col30">
+                            <p>Remark (Optional)</p>
+                        </div>
+                        <div class="col70">
+                            <p><span class="colon">: </span><span id="confirm_comment" class="confirm"></span></p>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <input type="submit" value="Confirm" />
+                <input type="button" value="Cancel" id="cancelButton" onclick="cancelEnquiry()" />
+            </form>
+        </div>
+    </article>
+    <script>
+        getEnquiry();
+    </script>
+    <!-- End of summary -->
+
+    <!--Start of back to top button (Using javascript)-->
+    <button onclick="backtoTop()" id="topBtn" title="Back to top"><i class="fa fa-arrow-up"></i></button>
+    <script>
+        backtoTop();
+    </script>
+    <!--End of back to top button (Using javascript)-->
+
+
+    <!--Footer content-->
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>Vending Machines</h3>
+
+            <div class="footer-menu-links">
+                <a href="cold.html" target="new_window">> Cold Drinks Vending Machines</a><br/>
+                <a href="hot.html" target="new_window">> Hot Drinks Vending Machines</a><br/>
+                <a href="snacks.html" target="new_window">> Snacks Vending Machines</a>
+            </div>
+        </div>
+
+        <div class="footer-center">
+            <h3>Explore</h3>
+
+            <div class="footer-menu-links">
+                <a href="enquiry.html" target="new_window">> Rental Enquiry</a><br/>
+                <a href="about.html" target="new_window">> About Us</a><br/>
+                <a href="about.html#team" target="new_window">> Meet The Team</a>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <h3>Others</h3>
+
+            <div class="footer-menu-links">
+                <a href="enhancement.html" target="new_window">> Enhancement</a><br/>
+                <a href="feedback.html" target="new_window">> Feedback</a><br/>
+                <a href="disclaimer.html" target="new_window">> Disclaimer</a>
+            </div>
+        </div>
+        <div class="prox">
+            <br/>
+            <hr/>
+            <br/>
+        </div>
+
+        <div class="footer-left">
+            <a href="index.html">
+                <img src="images/logo.svg" alt="VendEx Logo" />
+            </a>
+
+            <p class="footer-links">
+                Solving all your vending <br/> needs, one machine at a time.
+            </p>
+
+            <p class="footer-company-name">&copy; 2019 VendEx Sdn. Bhd.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>330, 801-2B Jalan Tun Jugah, Tun Jugah, </span> 93350 Kuching, Sarawak</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+60 11-26286813</p>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:vendex@gmail.com">vendex@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About the company</span> We offer training and for our vending machines which are a suitable choice for large offices, public areas and call centers.
+            </p><br/>
+            <h4 class="footer-social-media">Social Medias</h4>
+
+            <div class="footer-icons">
+                <a href="http://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
